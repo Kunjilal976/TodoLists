@@ -14,7 +14,7 @@ function Task({ task, index, completeTask, removeTask }) {
         );
     }
     
-    // [...]
+    
 
 
 export default Task
