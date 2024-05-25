@@ -1,45 +1,108 @@
-    body {
-      background: rgb(228, 189, 134);
-    }
-    
-    .todo-container {
-      background: rgb(41, 33, 33);
-      width: 40vw;
-      margin: 10em auto;
-      border-radius: 15px;
-      padding: 20px 10px;
-      color: white;
-      border: 3px solid rgb(36, 110, 194);
-    }
-    
-    .task {
-      border: 1px solid white;
-      border-radius: 5px;
-      padding: 0.5em;
-      margin: 0.5em;
-    }
-    
-    .task button{
-      background: rgb(12, 124, 251);
-      border-radius: 5px;
-      margin: 0px 5px;
-      padding: 3px 5px;
-      border: none;
-      cursor: pointer;
-      color: white;
-      float: right;
-    }
-    
-    .header {
-      margin: 0.5em;
-      font-size: 2em;
-      text-align: center;
-    }
-    
-    .create-task input[type=text] {
-      margin: 2.5em 2em;
-      width: 80%;
-      outline: none;
-      border: none;
-      padding: 0.7em;
-    }
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styles */
+.todo-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Task styles */
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.task span {
+  flex: 1;
+}
+
+.task button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task button:nth-child(2) {
+  background: #4caf50;
+  color: #fff;
+}
+
+.task button:nth-child(3) {
+  background: #f44336;
+  color: #fff;
+}
+
+.task button:nth-child(4) {
+  background: #008cba;
+  color: #fff;
+}
+
+/* Add Task form styles */
+.add-task {
+  margin-bottom: 20px;
+}
+
+.add-task h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.add-task form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-task form div {
+  margin-bottom: 10px;
+}
+
+.add-task form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.add-task form input,
+.add-task form select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-task form button {
+  padding: 10px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-task form button:hover {
+  background: #0056b3;
+}
