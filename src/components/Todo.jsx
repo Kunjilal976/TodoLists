@@ -23,7 +23,7 @@ function Todo() {
   const addTask = async (task) => {
     try {
       const response = await axios.post('http://localhost:3000/tasks', task);
-      setTasks([...tasks, response.data]);
+      setTasks([...tasks, response.data]); // Append the new task to the existing tasks array
     } catch (error) {
       console.error('Error adding task:', error);
     }
@@ -73,7 +73,6 @@ function Todo() {
             editTask={editTask}
           />
         ))}
-         <button onClick={() => addTask('New Task', 'New Description')}>Add Task</button>
       </div>
     </div>
   );
